@@ -113,13 +113,13 @@ my_value: felt,
 }
 ```
 
-## Compile the smart contract
+## A Protostar project
 
 For this example, we'll use [protostar](https://github.com/software-mansion/protostar), one of the Starknet framework. 
 
 First thing, [install Protostar](https://docs.swmansion.com/protostar/docs/tutorials/installation).
 
-### Initialize a Protostar project]
+### Initialize a Protostar project
 
 After we installed Protostar, let's create a project by using the following command.
 
@@ -134,5 +134,56 @@ The result of running protostar init is a configuration file `protostar.toml`, e
 * src — A directory for your code.
 * lib — A default directory for external dependencies.
 * tests — A directory storing tests.
+
+The `protostar.toml` file is the configuration file where we specify the path to our contracts; in this case, you'll already have a `cairo.main` example file. 
+
+In this case, we will generate a contract named `main` from our `src` folder.
+
+```
+["protostar.contracts"]
+main = [
+    "src/main.cairo",
+]
+```
+
+Simply delete the example code and paste our smart contract's code. 
+
+### Compile the Cairo smart contract
+
+We have initialized a Protostar project, and a Cairo smart contract is in the `src` folder; we are ready to compile.
+
+From the project main directory, run the following command to compile.
+
+```sh
+protostar build
+```
+You will receive a success message if the contract is compiled correctly.
+
+```sh
+16:23:13 [INFO] Built the project successfully                                                                                                             
+16:23:14 [INFO] Execution time: 2.96 s
+```
+
+After the contract has been compiled, you will notice a `build` directory in the project, where you can find the contract's ABI and the compiled contract as `main.json`.
+
+### Deploy the smart contract on testnet
+
+After the smart contract was compiled, we can finally use Protostar to deploy it on the StarkNet testnet.
+
+Use the following command to deploy the compiled contract.
+
+```sh
+protostar deploy ./build/main.json --network testnet
+```
+
+The result will show you the transaction hash and the contract address and give you a link to the smart contract on the Voyager explorer. 
+
+```sh
+[INFO] Deploy transaction was sent.
+Contract address: 0x06a5ea9e42c921bd58e24b8da9d1fc91a488df0700b173f1c6bb0e453f68afec
+Transaction hash: 0x1cbba90ba0d1fbfba09b1f7a0f987134dd9a02a845ca89244b3272374d37ede
+
+https://goerli.voyager.online/contract/0x06a5ea9e42c921bd58e24b8da9d1fc91a488df0700b173f1c6bb0e453f68afec
+
 
 ** Work in progress **
