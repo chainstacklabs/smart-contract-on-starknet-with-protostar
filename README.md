@@ -2,9 +2,22 @@
 
 This tutorial will show you how to create a simple smart contract in Cairo to save and retrieve a variable and then deploy it on the StarkNet testnet using ProtoStar.
 
-Cairo is a relatively new language that powers StarkNet`s smart contract; it is worth learning more about it! 
+Cairo is a relatively new language that powers StarkNet's smart contracts; it is worth learning more about it! 
 
 ## Table of contents
+
+  - [Cairo smart contract](#cairo-smart-contract)
+    - [The smart contract head](#the-smart-contract-head)
+    - [Declare a variable](#declare-a-variable)
+    - [Getter function](#getter-function)
+    - [Function to set the variable](#function-to-set-the-variable)
+  - [Full smart contract](#full-smart-contract)
+  - [A Protostar project](#a-protostar-project)
+    - [Initialize a Protostar project](#initialize-a-protostar-project)
+    - [Compile the Cairo smart contract](#compile-the-cairo-smart-contract)
+    - [Deploy the smart contract on testnet](#deploy-the-smart-contract-on-testnet)
+  - [Interact with the deployed contract](#interact-with-the-deployed-contract)
+  - [Conclusion](#conclusion)
 
 ## Cairo smart contract
 
@@ -72,7 +85,7 @@ my_value: felt,
 
 As you notice, in the function to set a stored value, we use `my_value_storage.write(my_value)`, where `my_value` is the argument passed through the function.
 
-## Full smart contrac
+## Full smart contract
 
 Now that we have all the separate parts, we can put them together. Here you'll find the entire smart contract, with some comments.
 
@@ -150,7 +163,7 @@ Simply delete the example code and paste our smart contract's code.
 
 ### Compile the Cairo smart contract
 
-We have initialized a Protostar project, and a Cairo smart contract is in the `src` folder; we are ready to compile.
+We have initialized a Protostar project, and there is a Cairo smart contract is in the `src` folder; we are ready to compile.
 
 From the project main directory, run the following command to compile.
 
@@ -184,6 +197,22 @@ Contract address: 0x06a5ea9e42c921bd58e24b8da9d1fc91a488df0700b173f1c6bb0e453f68
 Transaction hash: 0x1cbba90ba0d1fbfba09b1f7a0f987134dd9a02a845ca89244b3272374d37ede
 
 https://goerli.voyager.online/contract/0x06a5ea9e42c921bd58e24b8da9d1fc91a488df0700b173f1c6bb0e453f68afec
+```
 
+## Interact with the deployed contract
 
-** Work in progress **
+Now that the smart contract has been deployed, you can use the Voyager explorer to interact with it.
+
+You can use the [smart contract we deployed](https://goerli.voyager.online/contract/0x010c484443bafd91e255e7326676f146f825a1cbc1d69a711eb04186b2e2a734#readContract) if you still need to deploy yours. 
+
+Use the `Read Contract` tab to call the `view` function and see the stored value. 
+
+![screely-1667331609005](https://user-images.githubusercontent.com/99700157/199323621-7cb1a281-d5f4-434a-a8c0-d55a0c721ba4.png)
+
+Then you can use the `Write Contract` tab to call the `external function` and modify the value.
+
+![screely-1667331661106](https://user-images.githubusercontent.com/99700157/199323759-4ed4d165-eeab-4429-8cdf-175ac89a4562.png)
+
+## Conclusion
+
+Congratulations on completing this tutorial. Today you learned how to write and deploy a simple smart contract in Cairo!
