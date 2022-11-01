@@ -132,6 +132,8 @@ For this example, we'll use [protostar](https://github.com/software-mansion/prot
 
 First thing, [install Protostar](https://docs.swmansion.com/protostar/docs/tutorials/installation).
 
+> Note that Protostar is only supported on Linux and macOS.
+
 ### Initialize a Protostar project
 
 After we installed Protostar, let's create a project by using the following command.
