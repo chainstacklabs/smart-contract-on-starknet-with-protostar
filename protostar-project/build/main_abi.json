@@ -1,0 +1,25 @@
+[
+    {
+        "inputs": [],
+        "name": "get_my_stored_value",
+        "outputs": [
+            {
+                "name": "my_stored_value",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "my_value",
+                "type": "felt"
+            }
+        ],
+        "name": "set_my_stored_value",
+        "outputs": [],
+        "type": "function"
+    }
+]
