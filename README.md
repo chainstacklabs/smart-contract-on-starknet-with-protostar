@@ -31,19 +31,25 @@ See [Deploy a simple storage smart contract on StarkNet](https://chainstack.com/
 To use this Protostar project:
 
 * [Install Protostar](https://github.com/software-mansion/protostar#installation)
+```sh
+curl -L https://raw.githubusercontent.com/software-mansion/protostar/master/install.sh | bash
+```
 
 * Clone this repository:
 ```sh
 https://github.com/soos3d/Create-and-deploy-a-smart-contract-on-StarkNet.git
 ```
+
 * Go into the Protostar project's directory:
 ```sh
 cd protostar-project
 ```
+
 * Compile the smart contract
 ```sh
 protostar build
 ```
+
 * Deploy the smart contract
 ```sh
 protostar deploy ./build/main.json --network testnet
