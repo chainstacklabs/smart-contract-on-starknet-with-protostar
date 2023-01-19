@@ -1,25 +1,29 @@
+<img width="1200" alt="Labs" src="https://user-images.githubusercontent.com/99700157/213291931-5a822628-5b8a-4768-980d-65f324985d32.png">
+
+> Chainstack is the leading suite of services connecting developers with Web3 infrastructure.   
+
+<p align="center">
+  <a target="_blank" href="https://chainstack.com/build-better-with-ethereum/"><img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white" /></a>&nbsp;
+  <a target="_blank" href="https://chainstack.com/build-better-with-bnb-smart-chain/"><img src="https://tinyurl.com/mp2wu3xx" /></a>&nbsp;
+</p>
+
+<p align="center">
+  • <a target="_blank" href="https://chainstack.com/">Homepage</a> •
+  <a target="_blank" href="https://chainstack.com/blog/">Chainstack blog</a> •
+  <a target="_blank" href="https://docs.chainstack.com/quickstart/">Chainstack docs</a> •
+  <a target="_blank" href="https://docs.chainstack.com/quickstart/">Blockchain API reference</a> •
+  <a target="_blank" href="https://console.chainstack.com/user/account/create">Start for free</a> •
+</p>
+
 # Create and deploy a smart contract on StarkNet
 
 This tutorial will show you how to create a simple smart contract in Cairo to save and retrieve a variable and then deploy it on the StarkNet testnet using ProtoStar.
 
 Cairo is a relatively new language that powers StarkNet's smart contracts; it is worth learning more about it! 
 
-In this repo you will also find the project with the smart contract and the compiled files in the `protostar-project` folder.
+In this repo you will also find the project with the smart contract and the compiled files in the `protostar-project` directory.
 
-## Table of contents
-
-  - [Cairo smart contract](#cairo-smart-contract)
-    - [The smart contract head](#the-smart-contract-head)
-    - [Declare a variable](#declare-a-variable)
-    - [Getter function](#getter-function)
-    - [Function to set the variable](#function-to-set-the-variable)
-  - [Full smart contract](#full-smart-contract)
-  - [A Protostar project](#a-protostar-project)
-    - [Initialize a Protostar project](#initialize-a-protostar-project)
-    - [Compile the Cairo smart contract](#compile-the-cairo-smart-contract)
-    - [Deploy the smart contract on testnet](#deploy-the-smart-contract-on-testnet)
-  - [Interact with the deployed contract](#interact-with-the-deployed-contract)
-  - [Conclusion](#conclusion)
+See [Deploy a simple storage smart contract on StarkNet](https://chainstack.com/deploy-a-simple-storage-contract-on-starknet/) for the entire tutorial.
 
 ## Cairo smart contract
 
