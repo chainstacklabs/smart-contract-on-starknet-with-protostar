@@ -21,7 +21,7 @@ This tutorial will show you how to create a simple smart contract in Cairo to sa
 
 Cairo is a relatively new language that powers StarkNet's smart contracts; it is worth learning more about it! 
 
-In this repo you will also find the project with the smart contract and the compiled files in the `protostar-project` directory.
+In this repo you will find the project with the smart contract and the compiled files in the `protostar-project` directory.
 
 See [Deploy a simple storage smart contract on StarkNet](https://chainstack.com/deploy-a-simple-storage-contract-on-starknet/) for the entire tutorial.
 
