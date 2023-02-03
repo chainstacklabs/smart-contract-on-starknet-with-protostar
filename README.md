@@ -39,10 +39,7 @@ To use this Protostar project:
 curl -L https://raw.githubusercontent.com/software-mansion/protostar/master/install.sh | bash
 ```
 
-* Clone this repository:
-```sh
-https://github.com/soos3d/Create-and-deploy-a-smart-contract-on-StarkNet.git
-```
+* Clone this repository.
 
 * Go into the Protostar project's directory:
 ```sh
