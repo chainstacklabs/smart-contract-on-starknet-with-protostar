@@ -30,6 +30,11 @@ In this repo you will find the project with the smart contract and the compiled 
 
 See [Deploy a simple storage smart contract on StarkNet](https://chainstack.com/deploy-a-simple-storage-contract-on-starknet/) for the entire tutorial.
 
+## Requirements
+
+* Linux or macOS
+* [Protostar](https://github.com/software-mansion/protostar#installation) development tool
+
 ## Quick start
 
 To use this Protostar project:
@@ -58,7 +63,4 @@ protostar deploy ./build/main.json --network testnet
 
 Now the smart contract is deployed and you can interact with it. See the [interact with the deployed contract](https://chainstack.com/deploy-a-simple-storage-contract-on-starknet/#interact-with-the-deployed-contract) section of the tutorial for instructions.
 
-## Requirements
 
-* Linux or macOS
-* [Protostar](https://github.com/software-mansion/protostar#installation) development tool
